@@ -1,0 +1,95 @@
+/*Middle content*/
+.perks{
+    margin-top: 75px;
+    height: 750px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.perks .withBling {
+    color: #FB8C02;
+    font-size: 35px;
+    font-weight: 500;
+}
+.perks div{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.perks div div{
+    color: black;
+    border-radius: 20px;
+    width: 40%;
+    height: 150px;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    padding-left: 5px;
+    padding-right: 10px;
+    box-shadow: 1px 0px 4px 0px  #888888;
+}
+.perks div div img{
+    width: 30%;
+    height: 70px;
+}
+.perks div div p{
+    width: 70%;
+}
+.perks .trial{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    top: 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: #FB8C02;
+    padding: 15px;
+}
+.perks .trial:hover{
+    background-color: #eb9730;
+}
+
+@media only screen and (max-width:1024px) {
+    .perks{
+        height: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 95%;
+    }
+    .perks .withBling{
+        font-size: 32px;
+    }
+    .perks div div{
+        font-size: 15px;
+        padding-right: 25px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .perks{
+        height: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+    .perks .withBling{
+        text-align: center;
+        font-size: 28px;
+    }
+    .perks div div{
+        font-size: 16px;
+        padding-right: 20px;
+        width: 65%;
+    }
+}

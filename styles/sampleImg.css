@@ -1,0 +1,100 @@
+/*Sample image*/
+.sample{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sample div{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.sample div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sample div .divText{
+    flex-direction: row-reverse;
+}
+.sample div div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+.sample div div div h3{
+    font-size: 35px;
+    font-weight: 600;
+}
+.sample div div div p{
+    font-size: 21px;
+    font-weight: 200;
+    text-align: justify;
+    width: 80%;
+}
+.sample .imgDiv{
+    width: 58%;
+    height: 500px;
+    margin-bottom: 80px;
+    transition: transform 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+.sample .imgDiv:hover{
+    transform: scale(0.9);
+}
+.sample img{
+    width: 100%;
+    z-index: -1;
+    float: right;
+    border-radius: 10px;
+}
+.sample .textDiv{
+    width: 42%;
+}
+
+@media only screen and (max-width:1024px) {
+    .sample div div{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .sample div .divText{
+        flex-direction: column;
+    }
+    .sample .imgDiv{
+        margin-bottom: 0;
+        width: 80%;
+        height: fit-content;
+    }
+    .sample .textDiv{
+        margin: 0;
+        height: fit-content;
+        width: 70%;
+    }
+    .sample div div div h3{
+        margin: 0;
+        margin-top: 25px;
+    }
+    .sample div div div p{
+        line-height: 28px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .sample .textDiv{
+        width: 90%;
+    }
+    .sample div div div h3{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .sample div div div p{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

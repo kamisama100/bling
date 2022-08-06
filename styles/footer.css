@@ -1,0 +1,98 @@
+/*Footer*/
+.footer{
+    background-color: #855CF8;
+    color: white;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.footer div hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.5;
+}
+.footer div div .logoWhite{
+    width: 150px
+}
+.footer .top p{
+    margin: 0;
+}
+.footer div{
+    width: 95%;
+}
+.footer .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer div div{
+    display: flex;
+    flex-direction: column;
+}
+.footer div .menuButton{
+    position: relative;
+    top: 30%;
+}
+.footer div .menuButton a{
+    position: relative;
+    left: 30%;
+    width: fit-content;
+    font-size: 18px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.footer .imgDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.footer .imgDiv a{
+    cursor: pointer;
+}
+.footer .imgDiv a img{
+    width: 22px;
+    height: 20px;
+}
+.footer .addressTxt{
+    font-size: 17px;
+}
+.footer .someTxt{
+    font-size: 18px;
+}
+
+@media only screen and (max-width:1024px) {
+    .footer{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: auto;
+    }
+    .footer .top{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .footer .top .addressTxt{
+        font-size: 17px;
+    }
+    .footer .top .someTxt{
+        font-size: 16px;
+    }
+    .footer div .menuButton a{
+        left: 0;
+        font-size: 16px;
+    }
+    .footer div hr{
+        margin-top: 55px;
+    }
+}

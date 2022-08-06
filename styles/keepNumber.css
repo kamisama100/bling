@@ -1,0 +1,44 @@
+/*keep number*/
+.keepOrNot{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #38367A;
+    height: 120px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+.keepOrNot h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.keepOrNot h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+.keepOrNot a{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 10%;
+}
+.keepOrNot a:hover{
+    color: #855CF8;
+}
+@media only screen and (max-width:1024px) {
+    .keepOrNot{
+        height: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .keepOrNot h3{
+        font-size: 23px;
+    }
+    .keepOrNot h5{
+        font-size: 15px;
+    }
+}

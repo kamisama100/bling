@@ -1,0 +1,145 @@
+/*NavBar*/
+.navBar{
+    background-color: white;
+    height: 74px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.navBar div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.title{
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+.buttons1{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 25px;
+    height: fit-content;
+    margin-left: 15px;
+}
+.buttons1 button{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    background: transparent;
+    border: 0;
+    opacity: 0.5;
+}
+.buttons1 button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.buttons1 button::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background-color: #855CF8;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+.buttons1 button:hover::after {
+    transform: scaleX(1);
+}
+.buttons2{
+    justify-content: end;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+    height: fit-content;
+}
+.buttons2 a{
+    font-family: 'Inter', sans-serif;
+    font-size: 16;
+    font-weight: 500;
+    border: 2px solid #855CF8;
+    color: #855CF8;
+    text-align: center;
+    width: 20%;
+    border-radius: 100px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.buttons2 .login:hover{
+    color: white;
+}
+.buttons2 .login::before{
+    border-radius: 100px;
+    -webkit-transition:0.5s all ease;
+    transition:0.5s all ease;
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:'';
+    background-color:#855CF8;
+    z-index:-1;
+}
+.buttons2 .login:hover::before {
+    -webkit-transition:0.50s ease;
+    transition:0.2s ease;
+    left:0;
+    right:0;
+    opacity:1;
+}
+.buttons2 .signUp{
+    width: 22%;
+    background-color: #855CF8;
+    color: white;
+}
+.buttons2 .signUp:hover{
+    background-color: #6f52bd;
+    border-color: #6f52bd;
+}
+.burgerMenu{
+    border: 1px solid transparent;
+    width: 45px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    right:0;
+    margin: auto;
+}
+.burgerMenu:hover{
+    border: 1px solid #e0d6d6;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:1024px) {
+    .navBar .buttons2{
+        display: none;
+    }
+    .navBar .buttons1{
+        display: none;
+    }
+    .burgerMenu{
+        display: block;
+        left: 35%;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .burgerMenu{
+        left: 25%;
+    }
+} 
